@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"strict": false
+	},
+	"fmt": {
+		"useTabs": true,
+		"indentWidth": 4,
+		"singleQuote": false,
+		"semiColons": true
+	},
+	"imports": {
+		"@std/dotenv": "jsr:@std/dotenv@^0.225.2"
+	}
+}
