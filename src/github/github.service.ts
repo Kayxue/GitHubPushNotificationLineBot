@@ -16,7 +16,7 @@ export class GithubService {
 				messages: [
 					{
 						type: "flex",
-						altText: `${commit.committer.name} pushed his/her changes`,
+						altText: `${commit.author.name} pushed his/her changes`,
 						contents: {
 							type: "bubble",
 							body: {
@@ -38,7 +38,7 @@ export class GithubService {
 										contents: [
 											{
 												type: "text",
-												text: `${commit.committer.name} pushed his/her change to the repo`,
+												text: `${commit.author.name} pushed his/her change to the repo`,
 												wrap: true,
 											},
 											{
@@ -81,7 +81,7 @@ export class GithubService {
 														color: "#666666",
 														size: "sm",
 														flex: 5,
-														text: commit.committer.name,
+														text: commit.author.name,
 													},
 												],
 											},
