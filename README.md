@@ -38,7 +38,7 @@ deployctl deploy --project <project name>
 ```
 3. 部署中途可能會要求您以 GitHub 帳戶登入，請順便進行登入
 4. 確定部署成功後，至專案的 Deno Deploy 首頁複製該網頁的最短連結
-5. 複製完成後，請前往專案 `SE7Backend`-> `Settings` -> `Webhooks`，並點選`Add Webhooks`
+5. 複製完成後，請前往你想收到 Push 通知的專案的 `Settings` -> `Webhooks`，並點選`Add Webhooks`
 6. 在增加 Webhook 頁面中，請做以下設定：
     * `Payload URL` 請貼上剛剛你複製的網址，並且在最後加上 `/github`
     * `Content type` 請選擇 `application/json`
