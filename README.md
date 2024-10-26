@@ -1,5 +1,5 @@
 # SE7BackendNotificationBot
-軟體工程第七組後端專案 Push Notification Line Bot
+Line bot for GitHub push webhook notification
 
 ## Installation
 
