@@ -32,6 +32,8 @@ $ deno run start
 # watch mode
 $ deno run start:dev
 ```
+> [!CAUTION]
+> 請注意：此時在本地端執行仍無法接收 GitHub 傳送的 Webhook 資料，若真想測試，請自己利用 `smee.io` 服務將 Webhook 傳送導到本地 server 上。又或者您是利用 Docker Container 執行，也可利用 Cloudflare Tunnel 等方式讓外部可直接連入。
 ## Deploy the app to Deno Deploy
 1. 使用以下指令安裝 deployctl:
 ```
