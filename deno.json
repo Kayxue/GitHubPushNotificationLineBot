@@ -1,28 +1,25 @@
 {
-  "compilerOptions": {
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "strict": false
-  },
-  "fmt": {
-    "useTabs": true,
-    "indentWidth": 4,
-    "singleQuote": false,
-    "semiColons": true
-  },
-  "tasks": {
-    "start":"deno run -A ./src/main.ts",
-    "start:dev": "deno run -A --watch ./src/main.ts"
-  },
-  "imports": {
-    "@std/dotenv": "jsr:@std/dotenv@^0.225.2"
-  },
-  "deploy": {
-    "project": "42b82949-2427-4126-be31-9817fb8ef848",
-    "exclude": [
-      "**/node_modules"
-    ],
-    "include": [],
-    "entrypoint": "src\\main.ts"
-  }
+	"compilerOptions": {
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"strict": false
+	},
+	"fmt": {
+		"useTabs": true,
+		"indentWidth": 4,
+		"singleQuote": false,
+		"semiColons": true
+	},
+	"tasks": {
+		"start": "deno run -A ./src/main.ts",
+		"start:dev": "deno run -A --watch ./src/main.ts"
+	},
+	"deploy": {
+		"project": "42b82949-2427-4126-be31-9817fb8ef848",
+		"exclude": [
+			"**/node_modules"
+		],
+		"include": [],
+		"entrypoint": "src\\main.ts"
+	}
 }

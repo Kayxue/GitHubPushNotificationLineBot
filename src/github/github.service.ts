@@ -25,7 +25,7 @@ export class GithubService {
 								contents: [
 									{
 										type: "text",
-										text: "Changes Pushed",
+										text: "Commit Pushed",
 										weight: "bold",
 										size: "xl",
 										wrap: true,
@@ -95,7 +95,7 @@ export class GithubService {
 														text: "Message",
 														color: "#aaaaaa",
 														size: "sm",
-														flex: 2,
+														flex: 1,
 														wrap: true,
 													},
 													{
@@ -103,7 +103,7 @@ export class GithubService {
 														wrap: false,
 														color: "#666666",
 														size: "sm",
-														flex: 5,
+														flex: 3,
 														text: commit.message,
 													},
 												],
@@ -118,7 +118,7 @@ export class GithubService {
 														text: "Time",
 														color: "#aaaaaa",
 														size: "sm",
-														flex: 3,
+														flex: 1,
 														wrap: true,
 													},
 													{
@@ -126,7 +126,7 @@ export class GithubService {
 														wrap: true,
 														color: "#666666",
 														size: "sm",
-														flex: 5,
+														flex: 3,
 														text: moment
 															.utc(commit.timestamp)
 															.tz("Asia/Taipei")
@@ -159,7 +159,7 @@ export class GithubService {
 						},
 					},
 				],
-			});
+			}).catch(_ => null);
 		}
 		return "Finished";
 	}
