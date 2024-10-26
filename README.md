@@ -1,12 +1,5 @@
-# SE7BackendNotificationBot
-Line bot for GitHub push webhook notification
-
-## Installation
-
-```bash
-$ deno install
-```
-
+# GitHubPushNotificationLineBot
+Line bot for sending GitHub push webhook to Line
 ## Running the app
 1. 安裝 Deno：
 ```bash
