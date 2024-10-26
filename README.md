@@ -16,7 +16,7 @@ curl -fsSL https://deno.land/install.sh | sh
 irm https://deno.land/install.ps1 | iex
 ```
 2. Fork 並 Clone 此專案（若您需要自行修改或貢獻，若不用可直接 Clone 即可） 
-3. 在此專案下的 src 資料夾內，建立 `Config.ts`，並輸入以下內容（Channel Access Token 請自行在 Line Developer 頁面自行產生）：
+3. 在此專案下的 src 資料夾內，建立 `Config.ts`，並輸入以下內容（Channel Access Token 請在 Line Developer 頁面自行產生）：
 ```ts
 export const accessToken = "<Your channel access token>"
 ```
