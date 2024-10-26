@@ -1,5 +1,5 @@
-# ClassroomBorrowingSystemRemakeBackend
-教室借用系統重寫（NestJS 端）
+# SE7BackendNotificationBot
+軟體工程第七組後端專案 Push Notification Line Bot
 
 ## Installation
 
