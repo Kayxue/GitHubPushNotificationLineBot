@@ -10,7 +10,7 @@ export class GithubService {
 	) {}
 
 	public async sendGithubWebhook(body: any) {
-		const commits = body.commits;
+		const {commits} = body;
 		for (const commit of commits) {
 			await this.client.broadcast({
 				messages: [
