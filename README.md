@@ -42,7 +42,6 @@ deployctl deploy --project <project name>
     * `Which events would you like to trigger this webhook?` 請選擇 `Just the push event.`
 7. 最後點選 `Add Webhook` 即完成 
 ## 使用框架
-<h3 align="center">Hono</h3>
 <p align="center">
   <a href="https://hono.dev">
     <img src="https://raw.githubusercontent.com/honojs/hono/main/docs/images/hono-title.png" width="500" height="auto" alt="Hono"/>

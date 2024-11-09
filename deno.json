@@ -1,15 +1,23 @@
 {
-	"compilerOptions": {
-		"strict": false
-	},
-	"fmt": {
-		"useTabs": true,
-		"indentWidth": 4,
-		"singleQuote": false,
-		"semiColons": true
-	},
-	"tasks": {
-		"start": "deno run -A ./src/main.ts",
-		"start:dev": "deno run -A --watch ./src/main.ts"
-	}
+  "compilerOptions": {
+    "strict": false
+  },
+  "fmt": {
+    "useTabs": true,
+    "indentWidth": 4,
+    "singleQuote": false,
+    "semiColons": true
+  },
+  "tasks": {
+    "start": "deno run -A ./src/main.ts",
+    "start:dev": "deno run -A --watch ./src/main.ts"
+  },
+  "deploy": {
+    "project": "42b82949-2427-4126-be31-9817fb8ef848",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "src/main.ts"
+  }
 }
