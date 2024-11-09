@@ -13,11 +13,7 @@ irm https://deno.land/install.ps1 | iex
 ```ts
 export const accessToken = "<Your channel access token>"
 ```
-4. 安裝此專案所需模組：
-```
-deno install --allow-script
-```
-5. 在專案根目錄下輸入以下指令即可執行
+4. 在專案根目錄下輸入以下指令即可執行
 ```bash
 # development
 $ deno run start
@@ -46,12 +42,11 @@ deployctl deploy --project <project name>
     * `Which events would you like to trigger this webhook?` 請選擇 `Just the push event.`
 7. 最後點選 `Add Webhook` 即完成 
 ## 使用框架
-<h3 align="center">Nest.js</h3>
+<h3 align="center">Hono</h3>
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+  <a href="https://hono.dev">
+    <img src="https://raw.githubusercontent.com/honojs/hono/main/docs/images/hono-title.png" width="500" height="auto" alt="Hono"/>
+  </a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+<p align="center">A small, simple, and ultrafast web framework built on Web Standards.</p>

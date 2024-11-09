@@ -1,9 +1,14 @@
-import { NestFactory } from "@nestjs/core";
-import { AppModule } from "./app.module.ts";
+import { Hono } from "jsr:@hono/hono";
+import { cors } from "jsr:@hono/hono/cors";
+import { githubRouter } from "./Router/github.ts";
 
-async function bootstrap() {
-	const app = await NestFactory.create(AppModule);
-	app.enableCors()
-	await app.listen(3000);
-}
-bootstrap();
+const app = new Hono();
+
+app.get("/", (c) => {
+    return c.text("Welcome to the Bot API");
+});
+
+app.route("github", githubRouter);
+
+app.use(cors());
+Deno.serve({ port: 3000 }, app.fetch);
